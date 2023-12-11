@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop Local Minority Business</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- font awesome kit -->
+  <script src="https://kit.fontawesome.com/9757da1230.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- header navbar -->
+  <nav class="navbar navbar-expand-md sticky-top" aria-label="navbar" id="header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/home.png" alt="home icon" class="d-inline-block align-text-top home" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <div class="col-10 col-md-8 mt-4 mt-md-0 mx-auto">
+          <form role="search" class="col-md-8">
+            <input class="form-control" type="search"
+              placeholder="&#xF002; &nbsp;  Search a local minoritized business..." aria-label="Search"
+              style="font-family: Arial, FontAwesome" />
+          </form>
+        </div>
+        <div class="d-md-flex gap-md-2 col-md-4 align-items-center">
+          <div class="col-md-6 mt-4 mt-md-0">
+            <a class="nav-link nominate-link" href="#">Nominate a Business</a>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <a href="https://csppgh.squarespace.com/" target="_blank">
+              <img src="img/logo.png" alt="CSP logo" class="d-inline-block logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- filter1 on md & lg-->
+  <ul class="nav nav-pills align-items-center d-none d-md-flex" id="nav1">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Art & Culture</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Business Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Childcare</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Food & Restaurants</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Hair Salon</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Health & Fitness</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Nightlife</a>
+    </li>
+  </ul>
+  <!-- filter1 on sm-->
+  <div class="dropdown d-md-none mt-5">
+    <a class="btn btn-secondary dropdown-toggle dropdown-toggle1 col-10" href="#" role="button" id="dropdownMenuLink"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      Select a type of business
+    </a>
+    <ul class="dropdown-menu col-10" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" href="#">All</a></li>
+      <li><a class="dropdown-item" href="#">Art & Culture</a></li>
+      <li><a class="dropdown-item" href="#">Business Services</a></li>
+      <li><a class="dropdown-item" href="#">Childcare</a></li>
+      <li><a class="dropdown-item" href="#">Food & Restaurants</a></li>
+      <li><a class="dropdown-item" href="#">Hair Salon</a></li>
+      <li><a class="dropdown-item" href="#">Health & Fitness</a></li>
+      <li><a class="dropdown-item" href="#">Nightlife</a></li>
+    </ul>
+  </div>
+  <!-- filter2 on md & lg-->
+  <ul class="nav nav-pills align-items-center d-none d-md-flex" id="nav2">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">All</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Oakland</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Shadyside</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Squirrel Hill</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">East Liberty</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Other neighborhoods</a>
+    </li>
+  </ul>
+  <!-- filter2 on sm-->
+  <div class="dropdown d-md-none mt-4">
+    <a class="btn btn-light dropdown-toggle dropdown-toggle2 col-10" href="#" role="button" id="dropdownMenuLink"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      Select a Pittsburgh neighborhood
+    </a>
+    <ul class="dropdown-menu col-10" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" href="#">All</a></li>
+      <li><a class="dropdown-item" href="#">Oakland</a></li>
+      <li><a class="dropdown-item" href="#">Shadyside</a></li>
+      <li><a class="dropdown-item" href="#">Squirrel Hill</a></li>
+      <li><a class="dropdown-item" href="#">East Liberty</a></li>
+      <li><a class="dropdown-item" href="#">Other neighborhoods</a></li>
+    </ul>
+  </div>
+  <!-- introduction text -->
+  <h1>Thanks for visiting!</h1>
+  <div class="row justify-content-center">
+    <p class="introduction col-10 col-md-8">
+      From student organizations to entire colleges, we believe that CMU can
+      play a more active and engaging role in supporting local minoritized
+      businesses who are essential to the Greater Pittsburgh community. Please
+      make use of the growing database to connect with and patronize some of
+      our incredible community neighbors.
+    </p>
+  </div>
+  <br>
+  <div id="Featured" class="fs-2 mb-3">
+    Featured
+    <button type="button" class="btn btn-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cf575b" class="bi bi-question-circle"
+        viewBox="0 0 20 20">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+          d=" M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+      </svg>
+    </button>
+  </div>
+  <!-- featured businesses carousel for mobile -->
+  <div class="d-md-none text-center container">
+    <div id="featured" class="row d-flex align-items-center">
+      <div class="col-11">
+        <div id="carouselMobile" class="carousel slide" data-bs-ride="carouselMobile">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- <div class="row"> -->
+              <div style="background-image:url(img/square.png);" class="col-md d-flex">
+                <!-- <h5 class="featuredCaps" style="text-align:r">Square Cafe</h5> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="background-image:url(img/cobbler.png);" class="col-md d-flex">
+                <!-- <h5 class="featuredCaps" style="text-align:left">Cobbler World Bakery</h5> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="background-image:url(img/thai.png);" class="col-md d-flex">
+                <!-- <h5 class="featuredCaps" style="text-align:left">Thai Gourmet</h5> -->
+              </div>
+            </div>
+            <!-- </div> -->
+            <div class="carousel-item">
+              <div style="background-image:url(img/livefreshjuice.jpg);" class="col-12 col-md d-flex">
+                <!-- <h5 class="featuredCaps" style="text-align:left">Live Fresh Juice</h5> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="background-image:url(img/casa-brasil.jpg);" class="col-12 col-md d-flex">
+                <!-- <h5 class="featuredCaps" style="text-align:left">Casa Brazil</h5> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div style="background-image:url(img/soul-sea.jpeg);" class="col-12 col-md d-flex">
+                <!-- <h5 class="featuredCaps" style="text-align:left">Soul Sea</h5> -->
+              </div>
+            </div>
+          </div>
+          <!-- arrow buttons -->
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Featured businesses carousel for desktop -->
+  <div class="d-none d-md-block text-center container">
+    <div id="featured" class="row d-flex align-items-center">
+      <div class="col-11">
+        <div id="carouselDesktop" class="carousel slide" data-bs-ride="carouselDesktop">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div style="background-image:url(img/square.png);" class="col-md d-flex">
+                  <!-- <h5 class="featuredCaps" style="text-align:r">Square Cafe</h5> -->
+                </div>
+                <div style="background-image:url(img/cobbler.png);" class="col-md d-flex">
+                  <!-- <h5 class="featuredCaps" style="text-align:left">Cobbler World Bakery</h5> -->
+                </div>
+                <div style="background-image:url(img/thai.png);" class="col-md d-flex">
+                  <!-- <h5 class="featuredCaps" style="text-align:left">Thai Gourmet</h5> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div style="background-image:url(img/livefreshjuice.jpg);" class="col-12 col-md d-flex">
+                  <!-- <h5 class="featuredCaps" style="text-align:left">Live Fresh Juice</h5> -->
+                </div>
+                <div style="background-image:url(img/casa-brasil.jpg);" class="col-12 col-md d-flex">
+                  <!-- <h5 class="featuredCaps" style="text-align:left">Casa Brazil</h5> -->
+                </div>
+                <div style="background-image:url(img/soul-sea.jpeg);" class="col-12 col-md d-flex">
+                  <!-- <h5 class="featuredCaps" style="text-align:left">Soul Sea</h5> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- arrow buttons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 id="all-businesses">All Businesses</h1>
+  <!-- first row -->
+  <div class="row" style="padding-top:1%; margin-left: 8% ; margin-right: 8%">
+    <!--        note the different breakpoints for responsive web design -->
+    <div class="col-sm-4 col-6 m-auto">
+      <!--          our first card component that contains a picture of a restaurant, as well as 
+               the name of the restaurnat -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/masala-house.jpg" class="card-img-top" alt="masala house">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Masala House</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--            second card component -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/976-island-spice.jpg" class="card-img-top" alt="976-island-spice">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">876 Island Spice</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--          third card component -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/pure-grub.jpg" class="card-img-top" alt="pure-grub">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Pure Grub 412</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- second row -->
+    <div class="col-sm-4 col-6 m-auto">
+      <!--  first column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/observatory-hill-deli.jpg" class="card-img-top" alt="observatory-hill-deli">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Observatory Hill Deli</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--       second column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/roux-orleans.jpeg" class="card-img-top" alt="roux-orleans">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left" margin-left:-4%>Roux Orleans</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--    third column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/simmies-restaurant.jpeg" class="card-img-top" alt="simmies-restaurant">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Simmie's Restaurant</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- third row -->
+    <div class="col-sm-4 col-6 m-auto">
+      <!--  first column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/soul-sea.jpeg" class="card-img-top" alt="soul-sea">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Soul & Sea</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--       second column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/casa-brasil.jpg" class="card-img-top" alt="casa-brasil">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Casa Brasil</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--    third column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/2sisters2sons.jpeg" class="card-img-top" alt="2sisters2sons">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">2 Sisters 2 Sons</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- forth row -->
+    <div class="col-sm-4 col-6 m-auto">
+      <!--  first column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/kilimanjaro.jpeg" class="card-img-top" alt="kilimanjaro">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Kilimanjaro</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--       second column -->
+      <div class="card">
+        <a href="LiveFreshJuice.html" class="business-link">
+          <img src="img/livefreshjuice.jpg" class="card-img-top" alt="livefreshjuice">
+          <div class="card-body">
+            <h6 class="card-title" style="text-align: left">Live Fresh Juice</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 col-6 m-auto">
+      <!--    third column -->
+      <div class="card">
+        <a href="#" class="business-link">
+          <img src="img/veggiesnat.jpg" class="card-img-top" alt="veggiesnat">
+          <div class="card-body" style="text-align: left">
+            <h6 class="card-title">Veggie N'at</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- pagination for business lists -->
+  <nav aria-label="Page-navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">next</a></li>
+    </ul>
+  </nav>
+  <!-- the scotty helper that will show a pop-up box when the user clicks on it -->
+  <div class="popup" onclick="togglePopup()">
+    <div><img src="img/dog.svg" id="scotty-helper" alt="scotty" height=180></div>
+    <!-- initial prompy with the dog icon; will be hidden once the user clicks on it -->
+    <div id="scotty-prompt"> Why we need you to support them?</div>
+    <span class="popuptext" id="myPopup">
+      <div id="innertext">
+        <h3 class="fw-semibold"> Why support local minority-owned businesses?</h3>
+        <ul>
+          <li>Minority businesses play a major role in job creation.</li>
+          <li>They provide goods that might otherwise not be available
+            in the community.
+          </li>
+          <li>Different experiences help create new products and revive
+            stagnating industries.
+          </li>
+          <li>Supporting them helps close the
+            racial wealth gap.
+          </li>
+          <li>They keep our local community healthy and intact. </li>
+          <li>They further local diversity and variety. </li>
+        </ul>
+        <h3 class="fw-semibold"> How to support local minority-owned businesses?</h3>
+        <ul>
+          <li>Patronize minority establishments instead of major chain
+            stores; recommend them to family and friends.
+          </li>
+          <li>Use social media to spread the word even further to your
+            family, friends and community groups.
+          </li>
+          <li>Donate to a charity that supports minority-owned businesses.</li>
+        </ul>
+        <p> Take a lot at our website! We’ve listed a variety of businesses in Pittsburgh for you to
+          explore. If your favorite local minority-owned business is not on the list, feel free to nominate
+          it through the button at the top!
+        </p>
+      </div>
+      <!-- button to close the window -->
+      <button id="close-popup-button">Got it!</button>
+      </div>
+      </div>
+<h1>Subscribe to our newsletter</h1>
+        <!-- Subscribe for Mobile layout only-->
+        <div id=" subscribeMobile" class="col-10 d-lg-none container text-center mb-5">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <input class="form-control" type="search" placeholder="First Name"
+              style="font-family: Arial, FontAwesome" />
+          </div>
+          <div class="col-6">
+            <input class="form-control" type="search" placeholder="Last Name" style="font-family: Arial, FontAwesome" />
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+          <div class="col">
+            <input class="form-control" type="search" placeholder="Email Address"
+              style="font-family: Arial, FontAwesome" />
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+          <div>
+            <button id="submit" class="col-auto btn btn-lg" type="submit">Sign Up</button>
+          </div>
+        </div>
+  </div>
+
+  <!-- Subscribe for Larger Screens -->
+  <div id="subscribeDesktop" class="col-11 d-none d-lg-block container text-center mb-5">
+    <div class="row">
+      <div class="col col-sm-auto col-lg-3">
+        <input class="form-control" type="search" placeholder="First Name" style="font-family: Arial, FontAwesome" />
+      </div>
+      <div class="col col-sm-auto col-lg-3">
+        <input class="form-control" type="search" placeholder="Last Name" style="font-family: Arial, FontAwesome" />
+      </div>
+      <div class="col col-sm-auto col-lg-4">
+        <input class="form-control" type="search" placeholder="Email Address" style="font-family: Arial, FontAwesome" />
+      </div>
+      <div class="col-auto">
+        <button id="submit" class="btn btn-lg" type="submit">Sign Up</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="footer">
+    <div class="row">
+      <div class="col-6">
+        <h4><a href="https://csppgh.squarespace.com/home" class="footer-header footer-CSP-link">Center for
+            Shared Prosperity</a></h4>
+        <p style="padding-top: 15px"> 5000 Forbes Ave </p>
+        <p> Pittsburgh, PA, 15213 </p>
+        <p> <a href="https://www.cmu.edu/" class="footer-nav-link">Carnegie Mellon University</a> </p>
+      </div>
+      <div class="col">
+        <h4 class="footer-header footer-second-header">About</h4>
+        <p> <a href="https://csppgh.squarespace.com/our-mission" class="footer-nav-link">Our Mission</a> </p>
+        <p> <a href="https://csppgh.squarespace.com/events" class="footer-nav-link">Events</a> </p>
+      </div>
+      <div class="col">
+        <h4 class="footer-header footer-second-header">Projects</h4>
+        <p> <a href="https://csppgh.squarespace.com/projects" class="footer-nav-link">All Projects</a> </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- for ion icon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
